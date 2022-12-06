@@ -1,0 +1,47 @@
+#form1
+{
+	padding-left:0px;
+	width: 1000px;
+}
+
+.optionGroup_level1
+{
+	padding-left: 2px;
+}
+
+.optionGroup_level2
+{
+	padding-left: 17px;
+}
+
+.optionGroup_level3
+{
+	padding-left: 32px;
+}
+
+.optionGroup_level4
+{
+	padding-left: 47px;
+}
+
+.optionGroup_level2::before
+{
+	padding-left: 17px;
+	content: "- ";
+}
+
+.optionGroup_level3::before
+{
+	padding-left: 32px;
+	content: "-- ";
+}
+
+.optionGroup_level4::before
+{
+	padding-left: 47px;
+	content: "--- ";
+}
+
+span {
+	color: red;
+}

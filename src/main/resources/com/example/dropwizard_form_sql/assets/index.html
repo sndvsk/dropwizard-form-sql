@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+	<title>Dropwizard Task</title>
+    <link href="assets/index.css" rel="stylesheet"/>
+</head>
+<body>
+  <script src="assets/script.js" onload="onLoad()">
+  </script>
+
+<p>Please enter your name and pick the Sectors you are currently involved in.</p>
+
+<form id="form1" method="post">
+  <label for="name">Name:</label><br>
+  <input type="hidden" id="uid">
+  <input type="text" id="name" name="name">
+  <span id="errorName"></span>
+  <br><br>
+  <label for="sectors">Sectors:</label><br>
+
+  <!-- change multiple size to your liking, 79 sectors are in the database -->
+  <!--  you can select any sector from the list-->
+
+  <select id="sectors" name="sectors" multiple size="15">
+  </select>
+  <span id="errorSectors"></span>
+  <br><br>
+  <label for="terms">Agree to terms:</label>
+  <input type="checkbox" id="terms" value="terms">
+  <span id="errorTerms"></span>
+  <br><br>
+  <button type="submit" onclick="submitData()">Save</button>
+  <span id="errorApi"></span>
+</form>
+
+</body>
+</html>
